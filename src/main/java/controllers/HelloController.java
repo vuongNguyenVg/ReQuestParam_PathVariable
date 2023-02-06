@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HelloController {
    @RequestMapping(value = "requestParam")
-   public void testRequestParam(@RequestParam String user){
+   public void testRequestParam(@RequestParam String user , @RequestParam int age){
       System.out.println("User " + user);
+      System.out.println("Age " + age);
    }
 }
